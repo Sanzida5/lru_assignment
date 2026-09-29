@@ -1,0 +1,17 @@
+LRU Cache demonstration (capacity = 2)
+------------------------------------------
+put('A', 10)
+  order MRU -> LRU: ['A']
+put('B', 20)
+  order MRU -> LRU: ['B', 'A']
+get('A') -> 10
+  order MRU -> LRU: ['A', 'B']
+put('C', 30)
+  LRU eviction: 'B' -> 20
+  order MRU -> LRU: ['C', 'A']
+get('B') -> -1
+  order MRU -> LRU: ['C', 'A']
+get('C') -> 30
+  order MRU -> LRU: ['C', 'A']
+get('A') -> 10
+  order MRU -> LRU: ['A', 'C']
