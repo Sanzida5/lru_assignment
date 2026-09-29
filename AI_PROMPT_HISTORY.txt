@@ -1,0 +1,57 @@
+I have attached the assignment screenshot. Act as a senior software engineer and COMPLETE THE ENTIRE ASSIGNMENT for me based strictly on the screenshot.
+
+Do not just explain the solution. Actually implement the complete project.
+
+Requirements from the screenshot:
+- Implement an LRU Cache with Cache(capacity), get(key), and put(key, value).
+- Capacity must be positive.
+- get(key) returns the stored value if the key exists, otherwise -1.
+- A successful get() makes that key the most recently used.
+- put(key, value) inserts or updates the key/value pair and makes it most recently used.
+- When capacity is exceeded, evict the least recently used entry.
+- get() and put() must run in O(1) average time.
+- Demonstrate the required example:
+  Cache(2)
+  put("A",10)
+  put("B",20)
+  get("A") -> 10
+  put("C",30)
+  get("B") -> -1
+  get("C") -> 30
+  get("A") -> 10
+
+Use a proper data structure such as a Hash Map + Doubly Linked List (or another genuinely O(1)-average solution).
+
+Create the complete project with:
+1. Production-quality source code.
+2. Test/example code.
+3. README.md.
+4. Clear run instructions.
+5. Explanation of the data structures and why they are used.
+6. Explanation of how LRU ordering is maintained.
+7. Time complexity and space complexity.
+8. Tests for normal operations, missing keys, updates, capacity 1, repeated gets/puts, and eviction.
+9. Proper .gitignore and clean project structure.
+
+VERY IMPORTANT:
+Actually RUN the code and tests yourself. Fix every syntax error, runtime error, test failure, and build error before finishing.
+
+Generate REAL terminal output from the implementation showing:
+- put() operations
+- get() operations
+- returned values
+- LRU eviction
+
+Do NOT fake, manually type, or invent the output. The output must come from actually running the program.
+
+The assignment also requires an Output Screenshot. Create/prepare the project so I can take a clear screenshot of the real terminal output for submission. If your environment allows you to generate a screenshot, generate it from the actual execution; otherwise clearly tell me the exact terminal command to run and exactly what output I should capture.
+
+The assignment requires a GitHub Repository containing the source code, tests/example code, README, and run instructions. Prepare everything so I can push it directly to GitHub.
+
+After completing the implementation, give me the exact Git commands to create the repository and push it to GitHub.
+
+Also explain Vercel deployment. If this is only a CLI/algorithm project, clearly state that Vercel is not necessary for the assignment. If a web demo is useful/required, create a simple responsive web interface for the LRU Cache and make it Vercel-ready. Do not add unnecessary features that are not required by the assignment.
+
+Finally, give me a concise completion checklist confirming that every requirement in the screenshot has been completed.
+
+Do not stop at giving me code or instructions. COMPLETE, RUN, TEST, FIX, and PREPARE THE ENTIRE ASSIGNMENT so it is ready for GitHub submission.
